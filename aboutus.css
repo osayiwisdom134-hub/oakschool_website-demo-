@@ -1,0 +1,276 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #12355b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f4c542;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("school.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background-color: #f4c542;
+    color: #12355b;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #12355b;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.text p {
+    margin-bottom: 18px;
+}
+
+.grey {
+    background-color: #f4f6f8;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #12355b;
+    margin-bottom: 15px;
+}
+
+
+/* Mission and Vision */
+
+.mission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mission,
+.vision {
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.mission h2,
+.vision h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Location */
+
+.location-text {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+/* Call To Action */
+
+.cta {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0b2239;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding: 50px 8%;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: #f4c542;
+}
+
+.copyright {
+    border-top: 1px solid #345;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
